@@ -5,18 +5,18 @@ Since Doctrine/DBAL does not support the MySQL Timestamp type, you might want to
 According to [this issue](https://github.com/doctrine/dbal/issues/2558), [Doctrine/DBAL](https://github.com/doctrine/dbal) does not support MySQL-specific database types like this one. Therefor we must add it ourself.
 
 ## Installation
-```
-composer require marktopper/doctrine-dbal-timestamp-type
+```bash
+composer require ricardoboss/doctrine-dbal-timestamp-type
 ```
 
 Then add the type to `Doctrine\DBAL`:
-```
+```php
 \Doctrine\DBAL\Types\Type::addType('timestamp', 'MarkTopper\DoctrineDBALTimestampType\TimestampType');
 ```
 
 ### Laravel 5
 You can use the Laravel Provider to ensure that the type is added to Doctrine\DBAL by adding the following to providers:
-```
+```php
 MarkTopper\DoctrineDBALTimestampType\LaravelServiceProvider::class,
 ```
 
