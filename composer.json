@@ -1,7 +1,16 @@
 {
-    "name": "marktopper/doctrine-dbal-timestamp-type",
+    "name": "ricardoboss/doctrine-dbal-timestamp-type",
     "description": "Add the timestamp type for Doctrine/DBAL",
     "keywords": ["mysql", "doctrine", "dbal", "timestamp", "database", "laravel"],
+    "authors": [
+        {
+            "name": "marktopper"
+        },
+        {
+            "name": "ricardoboss",
+            "email": "contact@ricardoboss.de"
+        }
+    ],
     "license": "MIT",
     "type": "package",
     "require": {
